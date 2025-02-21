@@ -59,7 +59,7 @@ public class PlayerNameDisplay : MonoBehaviourPun
             if (healthText != null)
             {
                 healthText.text = $"Vida: {playerHealth.currentHealth}"; // Ahora playerHealth ya está asignado
-                healthText.color = Color.green;
+                healthText.color = Color.cyan;
                 Debug.Log("Texto de vida asignado.");
                 
                 // Suscribirse al evento de cambio de vida
@@ -148,7 +148,7 @@ public class PlayerNameDisplay : MonoBehaviourPun
             // Actualizar el color según el umbral
             if (healthPercentage <= 30f) // Umbral de vida baja
             {
-                healthText.color = Color.red;
+                healthText.color = Color.green;
             }
             else
             {
